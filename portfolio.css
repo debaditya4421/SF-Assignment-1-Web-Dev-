@@ -1,0 +1,284 @@
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation Bar */
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgb(93, 63, 63);
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+    margin-left: 33vw ;
+}
+#navbar ul li a{
+    display: block;
+    padding: 0px 0.5vw;
+    font-size: 1.7vw;   
+    color: white; 
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    margin: 1px 1.5vw;
+    font-weight: bold;
+}
+#portimg img{
+    height: 60px;
+    margin: 2px 5px;
+}
+#name{
+    padding: 1px 5px;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 1.8vw;
+    font-family: 'Prata', serif;
+}
+.menu :hover{
+    background-color: rgb(110, 135, 9);
+    cursor: pointer;
+}
+#l1:hover{
+    /* cursor: pointer; */
+    text-decoration: underline;
+}
+/* Home pg */
+#homepg{
+    margin: 30px 0;
+    background-color: beige;
+}
+#des{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 10vw;
+}
+#des h2, #des h5{
+    margin: 0;
+    padding: 0;
+    color: rgb(28, 66, 202);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#des h2{
+    font-size: 3vw;
+}
+#des h5{
+    font-size: 2vw;
+}
+#des button{
+    margin-top: 12px;
+    padding: 8px;
+    border: 1.7px solid rgb(27, 13, 13);
+    border-radius: 5px;
+    background-color: rgb(185, 185, 31);
+    font-weight: bold;
+}
+#des a:hover{
+    background-color: rgb(30, 23, 36);
+    color: white;
+    cursor: pointer;
+}
+#desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#desc img{
+    height: 500px;
+    margin-top: 30px;
+}
+#des a{
+    text-decoration: none;
+    padding: 2.4px;
+}
+.align{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/* Projects */
+#Projects h2{
+    font-size: 4vw;
+    color: rgb(84, 83, 80);
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+#Projects h5{
+    font-family: 'Cabin', sans-serif;
+    margin-top: 3px;
+    font-size: 2vw;
+    color: rgb(178, 104, 8);
+}
+#prjt{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.pr{
+    height: 430px;
+    width: 27%;
+    border: 5px solid black;
+    margin: 0.8%;
+}
+.pr img{
+    padding-top: 10px;
+    width: 100%;
+    height: 70%;
+}
+.pr p{
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.pr :hover{
+    color: rgb(16, 184, 16);
+    cursor: pointer;
+}
+#prjt :hover{
+    border-color: blue;
+}
+.pr button{
+    font-size: 1.3vw;
+    margin-left: 42% ;
+    padding: 5px;
+    background-color: rgb(232, 92, 92);
+    color: rgb(14, 14, 8);
+    font-weight: bold;
+    border-radius: 10px;
+}
+.pr button:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+/* Achievements */
+#Achievements{
+    margin: 25px 0;
+}
+#heading{
+    margin-bottom: 0;
+    font-size: 4vw;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(111, 111, 111);
+}
+#desc{
+    color: orange;
+    font-size: 1.5vw;
+    margin-bottom: 40px;
+}
+#grid1{
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: 3fr 2fr;
+    margin-bottom: 1rem;
+}
+.card1{
+    border: 5px solid red;
+    height: 425px;
+}
+#grid2{
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card2{
+    border: 5px solid red;
+}
+#c4,#c3,#c2{
+    height: 375px;
+}
+.card1 img, .card2 img{
+    padding-top: 10px;
+    width: 100%;
+    height: 70%;
+}
+.card1 h1, .card2 h1{
+    margin-bottom: 0;
+    color: rgb(192, 39, 39);
+    font-weight: bold;
+}
+.card1 p, .card2 p{
+    margin-top: 0;
+}
+#c2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#c1{
+    height: 783px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+.card1:hover,.card2:hover{
+    border-color: black;
+    cursor: pointer;
+    background-color: rgb(255, 255, 177);
+    color: rgb(72, 106, 78);
+    font-weight: bold;
+}
+/* Contact */
+#Contact{
+    background: url('https://gjepc.org/assets/images/inner_banner/contact_us.jpg') ;
+    padding-bottom: 25px;
+    padding-top: 15px;
+    background-size: cover;
+    margin: 20px 0;
+}
+#text{
+    margin: 45px 0;
+}
+#Contact h1{
+    font-size: 3.5vw;
+    margin-bottom: 0;
+    color: rgb(26, 22, 22);
+    text-decoration: underline;
+    font-family: 'Prata', serif;
+}
+#Contact h2{
+    margin-top: 3px;
+    font-size: 2.3vw;
+}
+#details{
+    display: flex;
+}
+#inp{
+    margin-right: 10vw;
+}
+.form{
+    margin-bottom: 20px;
+}
+.form input{
+    color: blue;
+    border-radius: 12px;
+    font-size: 1.9vw;
+    padding: 5px ;
+    font-weight: bold;
+}
+.form1 textarea{
+    font-weight: bold;
+    color: blue;
+    border-radius: 12px;
+    font-size: 1.9vw;
+    padding: 2px ;
+    height: 220px;
+}
+#btn{
+    margin-top: 40px;
+    font-size: 1.5vw;
+    padding: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+#btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: brown;
+}
